@@ -5,7 +5,7 @@ const Edit = ({ user, updateUser, closeEdit }) => {
   const [name, setName] = useState(user.name);
   const [email, setEmail] = useState(user.email);
   const [phone, setPhone] = useState(user.phone);
-  const [image, setImage] = useState(null);
+  const [image, setImage] = useState(user.image);
 
   const handleImage = (e) => {
     const updatedImage = e.target.files[0];
